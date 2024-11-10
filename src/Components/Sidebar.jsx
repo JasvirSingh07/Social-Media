@@ -17,18 +17,30 @@ import {
   FaExclamationTriangle,
   FaSignOutAlt,
   FaBookmark,
-  FaArrowLeft,
 } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 import { IoMdHelpBuoy } from "react-icons/io";
+import { ReportProblem } from "./ReportProblem";
+import Search from "./Search";
 
 const Sidebar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSearchActive, setIsSearchActive] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Modal handlers
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  // Sidebar menu items
   const menuItems = [
     { icon: <FaHome />, label: "Home", link: "/" },
-    { icon: <FaSearch />, label: "Search", link: "#", onClick: () => setIsSearchActive(true) },
+    {
+      icon: <FaSearch />,
+      label: "Search",
+      link: "#",
+      onClick: () => setIsSearchActive(true),
+    },
     { icon: <FaCompass />, label: "Explore", link: "/explore" },
     { icon: <FaVideo />, label: "Reels", link: "/reels" },
     { icon: <FaEnvelope />, label: "Messages", link: "/messages" },
@@ -45,10 +57,14 @@ const Sidebar = () => {
 
   const dropdownItems = [
     { icon: <FaCog />, label: "Settings", link: "/settings" },
-    { icon: <FaBookmark />, label: "Saved", link: "/settings" },
-    { icon: <FaClipboardList />, label: "Your Activity", link: "/settings" },
+    { icon: <FaBookmark />, label: "Saved", link: "/saved" },
+    { icon: <FaClipboardList />, label: "Your Activity", link: "/activity" },
     { icon: <FaSun />, label: "Switch Appearance", link: "/settings" },
-    { icon: <FaExclamationTriangle />, label: "Report a Problem", link: "/settings" },
+    {
+      icon: <FaExclamationTriangle />,
+      label: "Report a Problem",
+      onClick: openModal,
+    },
     { icon: <IoMdHelpBuoy />, label: "Help", link: "/help" },
   ];
 
@@ -64,9 +80,9 @@ const Sidebar = () => {
 
       {/* Navigation Menu */}
       {!isSearchActive ? (
-        <nav className="flex flex-col space-y-4  ">
+        <nav className="flex flex-col space-y-4">
           {menuItems.map((item, index) => (
-            <div key={index} className=" ">
+            <div key={index}>
               <Link
                 to={item.link}
                 onClick={item.onClick}
@@ -76,14 +92,17 @@ const Sidebar = () => {
                 <span className="text-base">{item.label}</span>
               </Link>
               {item.label === "More" && isDropdownOpen && (
-                <div className="bg-[#DFE7FD] rounded-md mt-2 w-full  p-2">
+                <div className="bg-[#DFE7FD] rounded-md mt-2 w-full p-2">
                   {dropdownItems.map((dropdownItem, index) => (
                     <div key={index}>
                       <Link
                         to={dropdownItem.link}
+                        onClick={dropdownItem.onClick}
                         className="flex items-center p-2.5 hover:bg-gray-700 transition duration-200 w-full"
                       >
-                        <span className="text-xl mr-2">{dropdownItem.icon}</span>
+                        <span className="text-xl mr-2">
+                          {dropdownItem.icon}
+                        </span>
                         <span className="text-base">{dropdownItem.label}</span>
                       </Link>
                     </div>
@@ -103,27 +122,10 @@ const Sidebar = () => {
           ))}
         </nav>
       ) : (
-        <div className="flex flex-col flex-grow p-4 bg-[#DFE7FD] rounded-md ">
-          <div className="flex items-center mb-4">
-            <FaArrowLeft
-              className="text-xl text-black cursor-pointer"
-              onClick={() => setIsSearchActive(false)}
-            />
-            <h2 className="text-lg ml-2">Search</h2>
-          </div>
-          <input
-            type="text"
-            placeholder="Search..."
-            className="p-2 rounded bg-black text-white focus:outline-none w-full"
-          />
-          <div className="mt-4">
-            <h3 className="text-sm">Recent Searches</h3>
-            <ul>
-              <li>No recent searches</li>
-            </ul>
-          </div>
-        </div>
+        <Search setIsSearchActive={setIsSearchActive} />
       )}
+
+      {isModalOpen && <ReportProblem closeModal={closeModal} />}
     </div>
   );
 };

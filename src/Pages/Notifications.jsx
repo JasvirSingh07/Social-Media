@@ -1,43 +1,4 @@
-const notificationsData = [
-  {
-    profileImg: "https://placehold.co/40x40",
-    name: "official_d.eep_mehra",
-    action: "Follow requests",
-    additionalInfo: "official_d.eep_mehra + 7 others",
-    type: "request",
-    time: "",
-  },
-  {
-    profileImg: "https://placehold.co/40x40",
-    name: "dvinderx13",
-    action: "liked your comment",
-    additionalInfo: "🔥🔥",
-    time: "3d",
-    type: "comment",
-  },
-  {
-    profileImg: "https://placehold.co/40x40",
-    name: "lifts_raj_s92.0",
-    action: "liked your story",
-    additionalInfo: "lifts_raj_s92.0 and others",
-    time: "3d",
-    type: "story",
-  },
-  {
-    profileImg: "https://placehold.co/40x40",
-    name: "jashan_1224",
-    action: "started following you",
-    time: "1w",
-    type: "follow",
-  },
-  {
-    profileImg: "https://placehold.co/40x40",
-    name: "official_d.eep_mehra",
-    action: "requested to follow you",
-    time: "2w",
-    type: "request",
-  },
-];
+import { notificationsData } from "../Utility/NotificationsData";
 
 const NotificationItem = ({ notification }) => (
   <div className="flex items-center border-b border-gray-800 py-2">
@@ -66,7 +27,7 @@ const NotificationItem = ({ notification }) => (
 );
 
 const Notifications = () => (
-  <div className="p-4 h-screen bg-black text-white">
+  <div className="px-[2.5vw] py-[2vw] h-screen text-white">
     <h1 className="text-2xl font-bold mb-4">Notifications</h1>
     <div className="mb-4">
       <h2 className="text-xl font-semibold mb-2">Follow requests</h2>

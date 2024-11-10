@@ -1,25 +1,56 @@
-export const ReportProblem = () => {
-    return (
-      <>
-        <div className="border-2 rounded-lg flex flex-col p-5 space-y-5 mx-auto w-1/2 mt-10" >
-          <div className="flex justify-center">
-            <h1>Report a problem</h1>
-          </div>
-          <textarea
-              type="text"
-              className=" bg-gray-800 w-full  p-[1.5vw] rounded-lg text-white"
-              placeholder="write your problem"
+export function ReportProblem({ closeModal }) {
+  return (
+    <div className="fixed w-[16vw] left-[16.5vw] bottom-0 text-black ">
+      <div className=" bg-[#DFE7FD] p-6 rounded-lg w-full">
+        <h2 className="text-xl font-semibold mb-4">Report a Problem</h2>
+        <form>
+          <div className="mb-4">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium "
+            >
+              Your Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="mt-1 block w-full px-3 py-2 border  rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              required
             />
-          <div className="flex justify-between">
-            <button className="border bg-blue-700 p-2 rounded-lg text-white">
-              send report
+          </div>
+          <div className="mb-4">
+            <label
+              htmlFor="description"
+              className="block text-sm font-medium "
+            >
+              Description of the Problem
+            </label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              required
+            />
+          </div>
+          <div className="flex justify-end">
+            <button
+              type="button"
+              className="px-4 py-2 bg-gray-500 text-white rounded mr-2"
+              onClick={closeModal}
+            >
+              Cancel
             </button>
-            <button className="border bg-gray-700 text-white p-2 rounded-lg">
-              add file
+            <button
+              type="submit"
+              className="px-4 py-2 bg-blue-500 text-white rounded"
+            >
+              Submit
             </button>
           </div>
-        </div>
-      </>
-    );
-  };
-  
+        </form>
+      </div>
+    </div>
+  );
+}
