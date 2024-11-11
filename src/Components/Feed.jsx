@@ -3,7 +3,7 @@ import StoryList from "./StoryList"
 
 function Feed() {
   return (
-    <div>
+    <div className="mx-8 my-[1vw]">
       <StoryList/>
       <Post/>
     </div>

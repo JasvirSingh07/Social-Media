@@ -36,8 +36,8 @@ function EditProfile() {
         <div>
           <input
             type="text"
-            className="bg-[#DFE7FD] w-full  p-[1.5vw] rounded-lg text-black placeholder:text-black"
-            placeholder="user-name"
+            className="bg-[#DFE7FD] w-full  p-[1.5vw] rounded-lg text-black placeholder:text-gray-400"
+            placeholder="Ex - jxss-bhatoa"
           />
         </div>
       </section>
@@ -47,8 +47,8 @@ function EditProfile() {
         <div>
           <input
             type="text"
-            className="bg-[#DFE7FD] text-black w-full  p-[1.5vw] rounded-lg placeholder:text-black"
-            placeholder="website"
+            className="bg-[#DFE7FD] text-black w-full  p-[1.5vw] rounded-lg placeholder:text-gray-400"
+            placeholder="Ex - https://linkedin/jxs07"
           />
         </div>
       </section>
@@ -57,7 +57,7 @@ function EditProfile() {
         <div>
           <textarea
             type="text"
-            className=" bg-[#DFE7FD] w-full text-black p-[1.5vw] rounded-lg placeholder:text-black "
+            className=" bg-[#DFE7FD] w-full text-black p-[1.5vw] rounded-lg placeholder:text-gray-400 "
             placeholder="bio"
           />
         </div>

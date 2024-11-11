@@ -21,13 +21,13 @@ const StoryList = () => {
   ];
 
   return (
-    <div className="flex space-x-4 m-8 overflow-x-scroll  scrollbar-hide ">
+    <div className="flex space-x-4 overflow-x-scroll scrollbar-hide ">
       {/* Add Your Story */}
       <div className="flex-shrink-0 text-center">
-        <div className="relative w-24 h-24 rounded-full bg-[#DFE7FD] border-2  flex items-center justify-center">
+        <div className="relative w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-[#DFE7FD] border-2  flex items-center justify-center">
           <FaPlus className="text-white text-2xl" />
         </div>
-        <p className="text-sm text-gray-300 mt-2">Add Your Story</p>
+        <p className="text-sm text-gray-300 mt-2">Add Story</p>
       </div>
       {/* User Stories */}
       {stories.map((story) => (
@@ -35,7 +35,7 @@ const StoryList = () => {
           <img
             src={story.img}
             alt={story.alt}
-            className="w-24 h-24 rounded-full object-cover border-2 "
+            className="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover border-2 "
           />
           <p className="text-sm text-gray-300 mt-2">{story.alt}</p>
         </div>

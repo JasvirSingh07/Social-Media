@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import img from "/images/jass.png";
+// import img from "/images/jass.png";
 import { FaMusic, FaUser } from "react-icons/fa";
 import { ImImages } from "react-icons/im";
 import { IoCreateOutline } from "react-icons/io5";
@@ -35,17 +35,17 @@ const Create = () => {
         </p>
       </div>
       <div className="mt-4 text-white *:rounded-lg shadow-md border ">
-        <div className="flex space-x-2 my-2 ml-10 sm:ml-20 items-center">
+        {/* <div className="flex space-x-2 my-2 ml-10 sm:ml-20 items-center">
           <img
             src={img}
             alt="Dp"
             className="w-14 h-14 sm:w-20 sm:h-20 rounded-full object-cover border-2 "
           />
-          <h1 className="text-[4vw] sm:text-sm lg:text-[1.3vw]  px-5  bg-[#DFE7FD] text-black lg:py-2.5 rounded-md">
+          <h1 className="text-[4vw] sm:text-sm md:text-lg lg:text-[1.3vw]  px-5 lg:py-2.5 rounded-md">
             _jass_bhatoa_
           </h1>
-        </div>
-        <div className="flex w-10/12 mx-auto mb-4">
+        </div> */}
+        <div className="flex w-10/12 my-[4vw] mx-auto mb-4">
           {selectedFile ? (
             <img
               src={selectedFile}

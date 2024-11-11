@@ -20,7 +20,7 @@ const Explore = () => {
   ];
 
   return (
-    <div className="grid grid-cols-3 gap-1 p-1">
+    <div className="grid grid-cols-3 gap-1 p-1 h-screen">
       {images.map((image, index) => (
         <div key={index} className="relative">
           <img

@@ -70,20 +70,22 @@ const Messages = () => {
     <div className=" h-screen text-white overflow-y-scroll scrollbar-hide my-[2vw] ">
       {/* Header */}
       <div className="flex items-center justify-between mb-4 mx-[2.5vw] ">
-        <span className="text-3xl font-bold flex items-center gap-2  ">
+        <span className="text-2xl lg:text-3xl font-bold flex items-center gap-2  ">
           <span>
-            <IoIosArrowDropdown className="text-4xl" />
+            <IoIosArrowDropdown className="" />
           </span>
           jass_bhatoa_
         </span>
         <div className="flex space-x-2">
           {/* <FaStickyNote className="text-white text-xl" /> */}
-          <FaEdit className="text-4xl" />
+          <FaEdit className="text-2xl lg:text-3xl" />
         </div>
       </div>
 
       {/* Stories (Profiles on top) */}
-      <StoryList />
+      <div className="px-[2.5vw]">
+        <StoryList />
+      </div>
 
       {/* Messages Heading */}
       <div className="flex justify-between mb-2 px-[2.5vw]">

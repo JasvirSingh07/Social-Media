@@ -1,7 +1,7 @@
 export function ReportProblem({ closeModal }) {
   return (
-    <div className="fixed w-[16vw] left-[16.5vw] bottom-0 text-black ">
-      <div className=" bg-[#DFE7FD] p-6 rounded-lg w-full">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center text-black z-50 ">
+      <div className="bg-[#DFE7FD] p-6 rounded-lg w-[400px] max-w-full shadow-lg animate__animated animate__fadeIn">
         <h2 className="text-xl font-semibold mb-4">Report a Problem</h2>
         <form>
           <div className="mb-4">
@@ -15,7 +15,7 @@ export function ReportProblem({ closeModal }) {
               type="email"
               id="email"
               name="email"
-              className="mt-1 block w-full px-3 py-2 border  rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               required
             />
           </div>

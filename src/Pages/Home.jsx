@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Sidebar from "../Components/Sidebar";
 import SuggestedUsers from "../Components/SuggestedUsers";
 import TagMentions from "./TagMentions";
@@ -20,15 +20,17 @@ import EditProfile from "./EditProfile";
 import Notifications from "./Notifications";
 
 const Home = () => {
+  const location = useLocation(); 
   return (
     <>
       <div className="flex w-full bg-[#0B0014]">
-        <div className="hidden sm:flex w-[15%] h-screen fixed border-r  top-0 left-0">
+      {/* hidden sm:flex w-[15%] h-screen fixed border-r top-0 left-0 */}
+        <div className="hidden sm:flex w-[20%] h-screen fixed border-r border-r-gray-300 border-opacity-20 top-0 left-0">
           <Sidebar />
         </div>
         {/* Main Content Section */}
         <div
-          className={`flex flex-col mt-8 sm:mt-0 w-full sm:ml-[15%] sm:w-[55%] sm:overflow-y-auto`}
+          className={`flex flex-col mt-8 sm:mt-0 w-full mx-auto sm:ml-[20%] ${location.pathname == '/' ? 'sm:w-[50%]' : 'w-[85%]'} sm:overflow-y-auto`}
         >
           <Routes>
             <Route path="/" element={<Feed />} />
@@ -56,7 +58,7 @@ const Home = () => {
         </div>
 
         <div
-          className={`hidden sm:block fixed right-0 border-l w-[30%]  border-l-customGray2 border-opacity-20`}
+          className={`hidden sm:block fixed right-0 border-l w-[30%]  border-l-gray-300 border-opacity-20 `}
         >
           <SuggestedUsers />
         </div>

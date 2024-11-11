@@ -1,5 +1,5 @@
 import { useState } from "react";
-import downArrow from "/images/Vector 66.svg";
+import downArrow from "/images/downArrow.svg";
 import { FaqData } from "../Utility/FaqData";
 import call from "/videos/Call Center.gif";
 
@@ -10,8 +10,8 @@ function Help() {
   };
 
   return (
-    <div className="space-y-[2vw] text-white rounded-xl">
-      <div className=" flex flex-col sm:flex-row items-center md:space-x-[3vw] sm:space-x-5 w-[95%] mx-auto sm:rounded-3xl sm:px-[3vw]">
+    <div className="space-y-[2vw] px-[2.5vw]  py-[2vw] text-white ">
+      <div className=" bg-[#DFE7FD] rounded-xl text-black flex flex-col sm:flex-row items-center pb-5 sm:pb-0 md:space-x-[3vw] sm:space-x-5 w-[95%] mx-auto sm:rounded-3xl sm:px-[3vw]">
         <div className="sm:ml-10 lg:ml-[2vw] mt-4 sm:mt-8 mx-auto sm:mx-0 w-[80%] sm:w-[40%] lg:w-[35%] xl:w-[25%] ">
           <img
             src={call}
@@ -23,9 +23,9 @@ function Help() {
           <h1 className="text-xl sm:text-lg md:text-2xl xl:text-4xl font-bold text-center sm:text-left">
             How can we help you ?
           </h1>
-          <div className="mt-4 xl:mt-8 xl:w-[65%]">
-            <div className="flex items-center py-3 rounded-full sm:rounded-lg shadow-lg bg-[#DFE7FD] overflow-hidden ">
-              <div className="grid place-items-center text-black pl-3">
+          <div className="mt-4 xl:mt-8  xl:w-[65%]">
+            <div className="flex items-center py-3 rounded-full sm:rounded-lg shadow-lg bg-black text-white overflow-hidden ">
+              <div className="grid place-items-center pl-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -43,7 +43,7 @@ function Help() {
               </div>
 
               <input
-                className="outline-none text-base text-black placeholder:text-black bg-[#DFE7FD] pl-2"
+                className="outline-none text-base bg-black pl-2"
                 type="text"
                 id="search"
                 placeholder="Search Your Key Words"
@@ -57,7 +57,7 @@ function Help() {
         <h1 className="text-xl sm:text-3xl mx-auto tracking-wide font-bold mt-2">
           Featured Topics
         </h1>
-        <div className="mt-4 md:mt-4 border rounded-2xl w-[90%]  mx-auto py-5 bg-[#DFE7FD] text-black">
+        <div className="mt-4 md:mt-4 border rounded-2xl w-[90%]  mx-auto py-5">
           <div className="max-h-[500px] overflow-y-auto">
             {FaqData.map((item, index) => (
               <div

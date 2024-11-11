@@ -5,7 +5,7 @@ const Post = () => {
   return (
     <div>
       {postData.map((post, index) => (
-        <div key={index} className="bg-[#DFE7FD]  p-4 rounded-lg m-8">
+        <div key={index} className="bg-[#DFE7FD] my-8 p-4 rounded-lg ">
           <div className="flex items-center mb-4">
             <div className={`flex-shrink-0 text-center mr-4`}>
             <img

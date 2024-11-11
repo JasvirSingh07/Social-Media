@@ -6,7 +6,7 @@ const reelsData = [
     username: 'shanayadiaries',
     caption: 'Only if my mind was working ... more',
     music: 'iamgravero - Gravero - Talking To The Moon x Jo Tum Mere Ho',
-    thumbnail: 'https://placehold.co/400x700',
+    thumbnail: 'https://placehold.co/400x650',
     likes: '19.3K',
     comments: '292',
   },
@@ -15,7 +15,7 @@ const reelsData = [
     username: 'ajaykumar_aps',
     caption: 'Exploring the world, one reel at a time.',
     music: 'explore_beats - Adventure is out there',
-    thumbnail: 'https://placehold.co/400x700',
+    thumbnail: 'https://placehold.co/400x650',
     likes: '2.1K',
     comments: '185',
   },
@@ -24,7 +24,7 @@ const reelsData = [
     username: 'thewanderlustguy',
     caption: 'Wander often, wonder always.',
     music: 'traveler_tunes - The road less traveled',
-    thumbnail: 'https://placehold.co/400x700',
+    thumbnail: 'https://placehold.co/400x650',
     likes: '8.7K',
     comments: '320',
   },
@@ -33,7 +33,7 @@ const reelsData = [
     username: 'official_d.eep_mehra',
     caption: 'Living my best life.',
     music: 'deepvibes - Chill vibes',
-    thumbnail: 'https://placehold.co/400x700',
+    thumbnail: 'https://placehold.co/400x650',
     likes: '10.5K',
     comments: '500',
   }
@@ -41,7 +41,7 @@ const reelsData = [
 
 const ReelItem = ({ reel }) => {
   return (
-    <div className="relative w-10/12 h-[700px]  mb-4">
+    <div className="relative w-10/12 h-[650px]  mb-4">
       <img
         src={reel.thumbnail}
         alt="Video thumbnail"
