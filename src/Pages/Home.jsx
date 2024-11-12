@@ -18,20 +18,29 @@ import Explore from "./Explore";
 import Feed from "../Components/Feed";
 import EditProfile from "./EditProfile";
 import Notifications from "./Notifications";
+import MobNav from "../Components/MobNav";
+import MobileTopNav from "../Components/MobileTopNav";
 
 const Home = () => {
   const location = useLocation();
   return (
     <>
-      <div className="flex w-full h-screen bg-[#0B0014]">
+      <div className="flex w-full  bg-[#0B0014]">
         <div className="hidden sm:flex w-[20%] h-screen fixed border-r border-r-gray-300 border-opacity-20 top-0 left-0">
           <Sidebar />
         </div>
+        <div className="w-full bottom-0 fixed border-b border-b-[#1d1d1d] sm:hidden block z-50 ">
+          <MobNav />
+        </div>
+        <div className="w-full top-0 px-[3vw] py-[2.5vw] bg-[#0B0014] fixed text-white sm:hidden block z-50 ">
+          <MobileTopNav />
+        </div>
+
         {/* Main Content Section */}
         <div
           className={`flex flex-col mt-8 sm:mt-0 w-full mx-auto sm:ml-[20%] ${
             location.pathname == "/" ? "sm:w-[50%]" : "w-[85%]"
-          } sm:overflow-y-auto`}
+          } sm:overflow-y-auto scrollbar-hide `}
         >
           <Routes>
             <Route path="/" element={<Feed />} />

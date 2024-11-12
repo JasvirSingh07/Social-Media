@@ -92,7 +92,7 @@ const ReelItem = ({ reel }) => {
 
 const Reels = () => {
   return (
-    <div className="flex flex-col items-center h-screen overflow-y-scroll scrollbar-hide">
+    <div className="flex flex-col items-center h-screen overflow-y-scroll scrollbar-hide sm:w-6/12 mx-auto py-[2.5vw]">
       {reelsData.map((reel, index) => (
         <ReelItem key={index} reel={reel} />
       ))}

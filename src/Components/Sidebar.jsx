@@ -6,7 +6,6 @@ import {
   FaSearch,
   FaCompass,
   FaVideo,
-  FaEnvelope,
   FaHeart,
   FaPlusSquare,
   FaUserCircle,
@@ -17,6 +16,7 @@ import {
   FaExclamationTriangle,
   FaSignOutAlt,
   FaBookmark,
+  FaFacebookMessenger,
 } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 import { IoMdHelpBuoy } from "react-icons/io";
@@ -44,7 +44,7 @@ const Sidebar = () => {
     },
     { icon: <FaCompass />, label: "Explore", link: "/explore" },
     { icon: <FaVideo />, label: "Reels", link: "/reels" },
-    { icon: <FaEnvelope />, label: "Messages", link: "/messages" },
+    { icon: <FaFacebookMessenger />, label: "Messages", link: "/messages" },
     { icon: <FaHeart />, label: "Notifications", link: "/notifications" },
     { icon: <FaPlusSquare />, label: "Create", link: "/create" },
     { icon: <FaUserCircle />, label: "Profile", link: "/profile" },
