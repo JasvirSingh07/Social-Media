@@ -70,7 +70,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="flex flex-col h-screen tracking-wide text-white  w-full">
+    <div className="flex flex-col h-screen tracking-wide  w-full">
       {/* Sidebar Content */}
       <div className={`lg:flex flex-col lg:space-y-3 sm:overflow-y-auto scrollbar-hide`}>
         {/* Profile Section */}

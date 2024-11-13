@@ -13,7 +13,7 @@ function EditProfile() {
     navigate("/settings"); 
   };
   return (
-    <div className="text-white px-[2.5vw] space-y-[1.5vw] h-screen 2xl:my-[2vw]  ">
+    <div className="text-white px-[2.5vw] space-y-[1.5vw] h-screen 2xl:my-[3vw]  ">
       <div className="flex items-center gap-[2vw]">
       <MdArrowBackIosNew  className="text-2xl" onClick={handleBackArrowClick} />
         <label className="text-2xl font-bold">Edit Profile</label>

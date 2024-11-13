@@ -1,8 +1,8 @@
 import { MdArrowBackIosNew } from "react-icons/md"
+import CloseRestrictMutedTemp from "../Components/CloseRestrictMutedTemp"
 import { useNavigate } from "react-router-dom";
-import CloseRestrictMutedTemp from "../Components/CloseRestrictMutedTemp";
 
-function RestrictedAccounts() {
+function MutedAccounts() {
     const navigate = useNavigate();
     const handleBackArrowClick = () => {
       navigate("/settings");
@@ -14,12 +14,11 @@ function RestrictedAccounts() {
           className="text-2xl  cursor-pointer"
           onClick={handleBackArrowClick}
         />
-        <h2 className="text-2xl font-bold ">Restricted Accounts</h2>
+        <h2 className="text-2xl font-bold ">Muted Accounts</h2>
       </div>
      <CloseRestrictMutedTemp/>
     </div>
   )
 }
 
-export default RestrictedAccounts
-{/* <button className="border p-[0.3vw] rounded-lg">{user.restrict}</button> */}
+export default MutedAccounts

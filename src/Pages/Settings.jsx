@@ -3,7 +3,7 @@ import { settingsData } from "../Utility/settingsData";
 
 const Settings = () => {
   return (
-    <div className="py-[2vw] px-[2.5vw] text-white">
+    <div className="py-[2vw] px-[2.5vw] text-white h-screen">
       <h1 className="text-xl font-bold mb-4">Settings</h1>
       {settingsData.map((section, idx) => (
         <div key={idx} className="mb-4">

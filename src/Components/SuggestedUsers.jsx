@@ -6,7 +6,7 @@ const SuggestedUsers = () => {
   const location = useLocation();
   const pathname = location.pathname;
 
-  const pathsWithoutFooter = [
+  const pathsWithoutSuggestUsers = [
     "/search",
     "/explore",
     "/reels",
@@ -25,11 +25,13 @@ const SuggestedUsers = () => {
     "/restrictedAccounts",
     "/help",
     "/tagsMentions",
+    "/comments",
+    "/mutedAccounts",
   ];
 
-  const shouldRenderFooter = !pathsWithoutFooter.includes(pathname);
+  const shouldSuggestUsers = !pathsWithoutSuggestUsers.includes(pathname);
 
-  if (!shouldRenderFooter) {
+  if (!shouldSuggestUsers) {
     return null;
   }
 
@@ -68,7 +70,9 @@ const SuggestedUsers = () => {
                 alt="user profile"
                 className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2"
               />
-              <div className="text-white text-sm sm:text-base">{user.username}</div>
+              <div className="text-white text-sm sm:text-base">
+                {user.username}
+              </div>
             </div>
             <div className="text-blue-500 text-xs sm:text-sm md:text-base cursor-pointer">
               {user.follow}

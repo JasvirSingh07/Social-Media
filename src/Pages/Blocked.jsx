@@ -9,7 +9,7 @@ function Blocked() {
   };
 
   return (
-    <div className="text-white px-[2.5vw] 2xl:my-[2vw] h-screen space-y-2">
+    <div className="text-white px-[2.5vw] 2xl:my-[3vw] h-screen space-y-2">
       <div className="flex items-center  gap-[2vw] ">
         <MdArrowBackIosNew
           className="text-2xl  cursor-pointer"

@@ -17,16 +17,18 @@ import Reels from "./Reels";
 import Explore from "./Explore";
 import Feed from "../Components/Feed";
 import EditProfile from "./EditProfile";
-import Notifications from "./Notifications";
+import {Notifications} from "./Notifications";
 import MobNav from "../Components/MobNav";
 import MobileTopNav from "../Components/MobileTopNav";
+import Comments from "./Comments";
+import MutedAccounts from "./MutedAccounts";
 
 const Home = () => {
   const location = useLocation();
   return (
     <>
       <div className="flex w-full  bg-[#0B0014]">
-        <div className="hidden sm:flex w-[20%] h-screen fixed border-r border-r-gray-300 border-opacity-20 top-0 left-0">
+        <div className="hidden sm:flex w-[20%] h-screen text-white fixed border-r border-r-gray-300 border-opacity-20 top-0 left-0">
           <Sidebar />
         </div>
         <div className="w-full bottom-0 fixed border-b border-b-[#1d1d1d] sm:hidden block z-50 ">
@@ -59,6 +61,8 @@ const Home = () => {
             <Route path="/accountPrivacy" element={<AccountPrivacy />} />
             <Route path="/closeFriends" element={<CloseFriends />} />
             <Route path="/blocked" element={<Blocked />} />
+            <Route path="/comments" element={<Comments />} />
+            <Route path="/mutedAccounts" element={<MutedAccounts />} />
             <Route
               path="/restrictedAccounts"
               element={<RestrictedAccounts />}
