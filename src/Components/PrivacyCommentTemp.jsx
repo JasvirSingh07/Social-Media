@@ -11,19 +11,19 @@ function PrivacyCommentTemp({data}) {
     <div className="text-white px-[2.5vw] 2xl:my-[3vw] space-y-2 h-screen">
       <div className="flex items-center gap-[2vw]">
         <MdArrowBackIosNew
-          className="text-2xl"
+          className="text-xl lg:text-2xl"
           onClick={handleBackArrowClick}
         />
-        <h1 className="text-2xl font-bold">{data.title}</h1>
+        <h1 className="text-xl lg:text-2xl font-bold">{data.title}</h1>
       </div>
       <div className="flex justify-between items-center bg-[#DFE7FD] text-black rounded-lg p-[1vw]">
         <div className="w-9/12">
-          <h2 className="text-xl">{data.subtitle}</h2>
-          <p className="text-slate-600">
+          <h2 className="text-base lg:text-xl">{data.subtitle}</h2>
+          <p className="text-slate-600 text-xs lg:text-base">
            {data.description}
           </p>
         </div>
-        <BsToggle2Off className="text-5xl" />
+        <BsToggle2Off className="text-3xl lg:text-5xl" />
       </div>
     </div>
   );

@@ -13,63 +13,63 @@ function EditProfile() {
     navigate("/settings"); 
   };
   return (
-    <div className="text-white px-[2.5vw] space-y-[1.5vw] h-screen 2xl:my-[3vw]  ">
+    <div className="text-white px-[2.5vw] space-y-[1.5vw] h-screen 2xl:my-[3vw] w-full lg:w-8/12 mx-auto ">
       <div className="flex items-center gap-[2vw]">
-      <MdArrowBackIosNew  className="text-2xl" onClick={handleBackArrowClick} />
-        <label className="text-2xl font-bold">Edit Profile</label>
+      <MdArrowBackIosNew  className="text-xl lg:text-2xl" onClick={handleBackArrowClick} />
+        <label className="text-xl lg:text-2xl font-bold">Edit Profile</label>
       </div>
-      <section className=" flex bg-[#DFE7FD]  rounded-lg justify-between p-[1.5vw]  my-14">
+      <section className=" flex bg-[#DFE7FD] items-center rounded-lg justify-between p-[1vw] lg:p-[1.5vw] ">
         <div className="flex items-center gap-2 text-black">
           <img
             src={img}
             alt="profile"
             className="w-10 h-10 rounded-full object-cover border-2"
           />
-          <h1>_jass_bhatoa_</h1>
+          <h1 className="text-base lg:text-lg">_jass_bhatoa_</h1>
         </div>
-        <button className="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-500 transition duration-200">
+        <button className="bg-blue-700 text-white px-4 h-8  lg:h-auto lg:py-2 text-xs lg:text-base rounded-md hover:bg-blue-500 transition duration-200">
           change photo
         </button>
       </section>
       <section className="space-y-[1.5vw]">
-        <label>User Name</label>
+        <label className="text-xs lg:text-base">User Name</label>
         <div>
           <input
             type="text"
-            className="bg-[#DFE7FD] w-full  p-[1.5vw] rounded-lg text-black placeholder:text-gray-400"
+            className="bg-[#DFE7FD] w-full  p-[1.5vw] rounded-lg text-black placeholder:text-gray-400 placeholder:text-xs placeholder:lg:text-base"
             placeholder="Ex - jxss-bhatoa"
           />
         </div>
       </section>
 
       <section className="space-y-[1.5vw]">
-        <label>website</label>
+        <label className="text-xs lg:text-base">Website</label>
         <div>
           <input
             type="text"
-            className="bg-[#DFE7FD] text-black w-full  p-[1.5vw] rounded-lg placeholder:text-gray-400"
+            className="bg-[#DFE7FD] text-black w-full  p-[1.5vw] rounded-lg placeholder:text-gray-400 placeholder:text-xs placeholder:lg:text-base"
             placeholder="Ex - https://linkedin/jxs07"
           />
         </div>
       </section>
       <section className="space-y-[1.5vw]">
-        <label>Bio</label>
+        <label className="text-xs lg:text-base">Bio</label>
         <div>
           <textarea
             type="text"
-            className=" bg-[#DFE7FD] w-full text-black p-[1.5vw] rounded-lg placeholder:text-gray-400 "
+            className=" bg-[#DFE7FD] w-full text-black p-[1.5vw] rounded-lg placeholder:text-gray-400 placeholder:text-xs placeholder:lg:text-base"
             placeholder="bio"
           />
         </div>
       </section>
 
       <section className="space-y-[1.5vw] flex flex-col ">
-        <label>Gender</label>
+        <label className="text-xs lg:text-base">Gender</label>
         <select
           id="gender"
           value={gender}
           onChange={handleGenderChange}
-          className="w-full p-[1.5vw] text-black rounded-lg bg-[#DFE7FD] "
+          className="w-full p-[1.5vw] text-black rounded-lg bg-[#DFE7FD] text-xs lg:text-base "
         >
           <option value="male">Male</option>
           <option value="female">Female</option>
@@ -78,7 +78,7 @@ function EditProfile() {
         </select>
       </section>
       <div className="flex justify-end">
-        <button className="bg-blue-700 text-white px-4 py-2 w-[10vw] rounded-md hover:bg-blue-500 transition duration-200 ">
+        <button className="bg-blue-700 text-white px-4 h-8 lg:h-auto lg:py-2 text-xs lg:text-base lg:w-[10vw] rounded-md hover:bg-blue-500 transition duration-200 ">
           submit
         </button>
       </div>

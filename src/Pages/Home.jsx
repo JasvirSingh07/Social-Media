@@ -35,7 +35,7 @@ const Home = () => {
         <div className="w-full bottom-0 fixed border-b border-b-[#1d1d1d] sm:hidden block z-50 ">
           <MobNav />
         </div>
-        <div className="w-full top-0 px-[3vw] py-[2.5vw] bg-[#0B0014] fixed text-white sm:hidden block z-50 ">
+        <div className="w-full top-0 px-[3vw] py-[vw] bg-[#0B0014] fixed text-white sm:hidden block z-50 ">
           <MobileTopNav />
         </div>
 

@@ -24,6 +24,9 @@ function MobileTopNav() {
     "/restrictedAccounts",
     "/help",
     "/tagsMentions",
+    "/language",
+    "/comments",
+    "/mutedAccounts"
   ];
 
   const shouldRenderFooter = !pathsWithoutFooter.includes(pathname);

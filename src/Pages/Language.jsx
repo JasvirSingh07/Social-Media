@@ -10,18 +10,18 @@ function Language() {
   };
 
   return (
-    <div className="text-white px-[2.5vw] 2xl:my-[3vw] h-screen space-y-5 ">
+    <div className="text-white px-[2.5vw] 2xl:my-[3vw]  space-y-5 ">
       <div className="flex items-center gap-[2vw] ">
         <MdArrowBackIosNew
           className="text-2xl  cursor-pointer"
           onClick={handleBackArrowClick}
         />
-        <h2 className="text-2xl font-bold ">Search languages</h2>
+        <h2 className="text-xl 2xl:text-2xl font-bold ">Search languages</h2>
       </div>
       <input
         type="text"
         placeholder="Search..."
-        className="p-[0.8vw] rounded-lg w-6/12  bg-[#DFE7FD] text-black focus:outline-none"
+        className="p-[0.8vw] rounded-lg w-8/12 sm:w-6/12  bg-[#DFE7FD] text-black focus:outline-none"
       />
       <div className="flex flex-col space-y-[1vw]"> 
         {LanguageData.map((lang, index) => {

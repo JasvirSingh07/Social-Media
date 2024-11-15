@@ -11,10 +11,10 @@ function PersonalDetailsTemp({data}) {
       {data ? (
         <div key={data.id} className="space-y-2 mb-[3vw]">
           <div className="flex items-center gap-[2vw]">
-            <MdArrowBackIosNew className="text-2xl" onClick={handleBackArrowClick}/>
-            <h1 className="text-2xl font-bold">{data.heading}</h1>
+            <MdArrowBackIosNew className="text-xl lg:text-2xl" onClick={handleBackArrowClick}/>
+            <h1 className="text-xl lg:text-2xl font-bold">{data.heading}</h1>
           </div>
-          <p>{data.description}</p>
+          <p className="text-xs lg:text-base">{data.description}</p>
 
           <section className="bg-[#DFE7FD] text-black rounded-lg">
             {data.details.map((detail, detailIndex) => (
@@ -27,8 +27,8 @@ function PersonalDetailsTemp({data}) {
                 }`}
               >
                 <div>
-                  <h1>{detail.title}</h1>
-                  <p>{detail.info}</p>
+                  <h1 className="text-xs lg:text-lg">{detail.title}</h1>
+                  <p className="text-xs lg:text-base">{detail.info}</p>
                 </div>
                 <MdArrowForwardIos />
               </div>

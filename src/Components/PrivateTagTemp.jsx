@@ -1,19 +1,16 @@
-import { MdArrowForwardIos } from "react-icons/md"; 
 import { AiOutlineClose } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
-function PasswordSecurityTemp({data}) {
-  const navigate = useNavigate();
-  const handleCloseClick = () => {
-    navigate('/settings');
-  };
+function PrivateTagTemp({data}) {
+    const navigate = useNavigate();
+    const handleCloseClick = () => {
+      navigate("/settings");
+    };
   return (
-    <div>
-      {data ? (
-        <div key={data.id} className=" space-y-2 mb-[3vw] ">
+        <div key={data.id} className="mt-[1vw] space-y-2 mb-[3vw] ">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold">{data.heading}</h1>
-            <AiOutlineClose className="text-2xl" onClick={handleCloseClick}/>
+            <h1 className="text-lg lg:text-2xl font-bold">{data.heading}</h1>
+            <AiOutlineClose className="text-lg lg:text-2xl" onClick={handleCloseClick} />
           </div>
           <section className="">
             {data.details.map((detail, detailIndex) => (
@@ -22,8 +19,8 @@ function PasswordSecurityTemp({data}) {
                 className={`flex justify-between items-center p-[1vw] `}
               >
                 <div className="w-full">
-                  <h1>{detail.title}</h1>
-                  <p>{detail.info}</p>
+                  <h1 className="text-sm lg:text-xl font-bold">{detail.title}</h1>
+                  <p className="text-xs lg:text-base">{detail.info}</p>
 
                   {detail.subDetails && (
                     <section className="mt-2 bg-[#DFE7FD] text-black rounded-lg">
@@ -37,9 +34,9 @@ function PasswordSecurityTemp({data}) {
                           }`}
                         >
                           <div>
-                            <h1>{subDetail.title}</h1>
+                            <h1 className="text-xs lg:text-base ">{subDetail.title}</h1>
                           </div>
-                          <MdArrowForwardIos />
+                         {subDetail.icon}
                         </div>
                       ))}
                     </section>
@@ -49,11 +46,7 @@ function PasswordSecurityTemp({data}) {
             ))}
           </section>
         </div>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
-  );
+  )
 }
 
-export default PasswordSecurityTemp;
+export default PrivateTagTemp

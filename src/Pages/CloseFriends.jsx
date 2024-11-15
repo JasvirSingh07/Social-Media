@@ -11,10 +11,10 @@ function CloseFriends() {
     <div className="text-white px-[2.5vw] 2xl:my-[3vw] h-screen space-y-2 ">
       <div className="flex items-center  gap-[2vw] ">
         <MdArrowBackIosNew
-          className="text-2xl  cursor-pointer"
+          className="text-xl lg:text-2xl cursor-pointer"
           onClick={handleBackArrowClick}
         />
-        <h2 className="text-2xl font-bold ">Close Friends</h2>
+        <h2 className="text-xl lg:text-2xl font-bold ">Close Friends</h2>
       </div>
       <input
         type="text"

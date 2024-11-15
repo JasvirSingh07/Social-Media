@@ -1,4 +1,4 @@
-import PersonalTagTemp from "../Components/PersonalTagTemp";
+import PersonalTagTemp from "../Components/PrivateTagTemp";
 import { DetailsData } from "../Utility/DetailsData";
 
 function PasswordSecurity() {
