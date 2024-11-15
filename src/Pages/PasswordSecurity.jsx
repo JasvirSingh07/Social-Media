@@ -1,9 +1,10 @@
-import PasswordSecurityTemp from "../Components/PasswordSecurityTemp";
+import PersonalTagTemp from "../Components/PersonalTagTemp";
+import { DetailsData } from "../Utility/DetailsData";
 
 function PasswordSecurity() {
   return (
     <div className="text-white 2xl:my-[3vw] px-[2.5vw] h-screen">
-      <PasswordSecurityTemp />
+      <PersonalTagTemp data={DetailsData.passwordSecurity} />
     </div>
   );
 }

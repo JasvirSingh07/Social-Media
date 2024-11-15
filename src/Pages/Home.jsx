@@ -22,6 +22,7 @@ import MobNav from "../Components/MobNav";
 import MobileTopNav from "../Components/MobileTopNav";
 import Comments from "./Comments";
 import MutedAccounts from "./MutedAccounts";
+import Language from "./Language";
 
 const Home = () => {
   const location = useLocation();
@@ -68,6 +69,7 @@ const Home = () => {
               element={<RestrictedAccounts />}
             />
             <Route path="/tagsMentions" element={<TagMentions />} />
+            <Route path="/language" element={<Language />} />
           </Routes>
         </div>
 

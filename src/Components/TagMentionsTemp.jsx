@@ -1,24 +1,22 @@
 import { AiOutlineClose } from "react-icons/ai";
-import { DetailsData } from "../Utility/DetailsData";
 import { useNavigate } from "react-router-dom";
 import { RiCheckboxBlankCircleLine } from "react-icons/ri";
 
-function TagMentionsTemp() {
-  const comp3Data = DetailsData.find((item) => item.id === "comp3");
+function TagMentionsTemp({ data }) {
   const navigate = useNavigate();
   const handleCloseClick = () => {
     navigate("/settings");
   };
   return (
     <div>
-      {comp3Data ? (
-        <div key={comp3Data.id} className="mt-[1vw] space-y-2 mb-[3vw] ">
+      {data ? (
+        <div key={data.id} className="mt-[1vw] space-y-2 mb-[3vw] ">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold">{comp3Data.heading}</h1>
+            <h1 className="text-2xl font-bold">{data.heading}</h1>
             <AiOutlineClose className="text-2xl" onClick={handleCloseClick} />
           </div>
           <section className="">
-            {comp3Data.details.map((detail, detailIndex) => (
+            {data.details.map((detail, detailIndex) => (
               <div
                 key={detailIndex}
                 className={`flex justify-between items-center p-[1vw] `}

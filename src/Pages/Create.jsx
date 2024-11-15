@@ -27,7 +27,7 @@ const Create = () => {
     );
 
   return (
-    <div className="py-[2vw]  px-[2.5vw] pb-20 h-screen">
+    <div className="py-[2vw]  w-full sm:w-8/12 mx-auto px-[2.5vw] pb-20 h-screen">
       <div className="flex space-x-[1vw] items-center ">
         <IoCreateOutline className="text-[5vw] sm:text-[2.5vw] text-white " />
         <p className="text-xl sm:text-lg lg:text-2xl xl:text-4xl tracking-wide text-white font-extrabold">

@@ -1,9 +1,10 @@
-import TagMentionsTemp from "../Components/TagMentionsTemp"
+import PersonalTagTemp from "../Components/PersonalTagTemp"
+import { DetailsData } from "../Utility/DetailsData"
 
 function TagMentions() {
   return (
     <div className="text-white px-[2.5vw] 2xl:my-[2vw] h-screen">
-      <TagMentionsTemp/>
+      <PersonalTagTemp data={DetailsData.tagsMentions}/>
     </div>
   )
 }

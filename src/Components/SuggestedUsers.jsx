@@ -27,6 +27,7 @@ const SuggestedUsers = () => {
     "/tagsMentions",
     "/comments",
     "/mutedAccounts",
+    "/language",
   ];
 
   const shouldSuggestUsers = !pathsWithoutSuggestUsers.includes(pathname);
