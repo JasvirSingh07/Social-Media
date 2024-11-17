@@ -17,7 +17,6 @@ const postData = [
       avatarBg: "bg-gray-700",
       isTextPost: false,
     },
-    
   ];
   
   export default postData;

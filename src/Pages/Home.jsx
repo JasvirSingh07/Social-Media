@@ -15,6 +15,7 @@ import Create from "./Create";
 import Messages from "./Messages";
 import Reels from "./Reels";
 import Explore from "./Explore";
+import Feed from "../Components/Feed";
 import EditProfile from "./EditProfile";
 import {Notifications} from "./Notifications";
 import MobNav from "../Components/MobNav";
@@ -22,7 +23,6 @@ import MobileTopNav from "../Components/MobileTopNav";
 import Comments from "./Comments";
 import MutedAccounts from "./MutedAccounts";
 import Language from "./Language";
-import Feed from "./Feed";
 
 const Home = () => {
   const location = useLocation();

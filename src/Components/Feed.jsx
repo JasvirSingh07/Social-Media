@@ -1,5 +1,5 @@
-import Post from "../Components/Post";
-import StoryList from "../Components/StoryList";
+import Post from "./Post";
+import StoryList from "./StoryList";
 
 function Feed() {
   return (

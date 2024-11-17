@@ -5,10 +5,10 @@ import { useNavigate } from "react-router-dom";
 const Profile = () => {
   const navigate = useNavigate();
   const handleIconClick = () => {
-    navigate("/settings");
+    navigate('/settings');
   };
   const handleEditProfileClick = () => {
-    navigate("/editProfile");
+    navigate('/editProfile');
   };
 
   return (
@@ -64,22 +64,21 @@ const Profile = () => {
       <div className="text-center mb-6">
         <p className="sm:text-lg md:text-xl">جس بھٹوہ</p>
         <p className="sm:text-lg md:text-xl">
-          । ਬੇਬੇ ਬਾਪੂ 💯 ।<br /> #wmk🙏
-          <br />۔ ਪੰਜਾਬ ⛳ ।
+          । ਬੇਬੇ ਬਾਪੂ 💯 ।<br /> #wmk🙏<br />۔ ਪੰਜਾਬ ⛳ ।
         </p>
       </div>
 
       {/* Tabs Section */}
       <div className="flex justify-center gap-8 border-t border-gray-700 py-2 mb-6">
-        <div className="cursor-pointer flex items-center  text-sm  sm:text-lg ">
+        <div className="cursor-pointer flex items-center sm:text-lg ">
           <FaTh className="mr-2" />
           <span className="font-bold">POSTS</span>
         </div>
-        <div className="cursor-pointer flex items-center text-sm sm:text-lg ">
+        <div className="cursor-pointer flex items-center sm:text-lg ">
           <FaBookmark className="mr-2" />
           <span>SAVED</span>
         </div>
-        <div className="cursor-pointer flex items-center  text-sm  sm:text-lg ">
+        <div className="cursor-pointer flex items-center sm:text-lg ">
           <FaTag className="mr-2" />
           <span>TAGGED</span>
         </div>
@@ -88,9 +87,7 @@ const Profile = () => {
       {/* Share Photos Section */}
       <div className="flex flex-col items-center justify-center mb-6">
         <FaCamera className="text-3xl mb-2 sm:text-5xl " />
-        <h2 className="text-xl font-bold sm:text-2xl text-blue-500">
-          Share Photos
-        </h2>
+        <h2 className="text-xl font-bold sm:text-2xl text-blue-500">Share Photos</h2>
         {/* <p className="mt-2 sm:text-lg md:text-xl">
           When you share photos, they will appear on your profile.
         </p> */}
