@@ -26,7 +26,7 @@ const Explore = () => {
         <input
           type="text"
           placeholder="Search..."
-          className="w-full p-2 text-black bg-[#DFE7FD] rounded-md"
+          className="w-full p-2 text-white bg-black  rounded-md"
         />
       </div>
 
