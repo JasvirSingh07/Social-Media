@@ -2,7 +2,7 @@ import { FaArrowLeft } from "react-icons/fa"
 
 function Search({setIsSearchActive}) {
   return (
-    <div className="flex h-screen text-black flex-col flex-grow p-4 bg-[#DFE7FD] rounded-md">
+    <div className="flex h-screen text-black flex-col flex-grow p-4 bg-gray-100 rounded-md">
     <div className="flex items-center mb-4">
       <FaArrowLeft
         className="text-xl text-black cursor-pointer"

@@ -8,7 +8,7 @@ function MutedAccounts() {
       navigate("/settings");
     };
   return (
-    <div className="space-y-4 my-[3vw] w-9/12 text-white h-screen px-[2.5vw]">
+    <div className="space-y-4 my-[2vw] w-9/12 h-screen px-[2.5vw]">
       <div className="flex items-center  gap-[2vw] ">        
         <MdArrowBackIosNew
           className="lg:text-2xl text-xl cursor-pointer"

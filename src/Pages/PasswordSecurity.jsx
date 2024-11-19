@@ -3,7 +3,7 @@ import { DetailsData } from "../Utility/DetailsData";
 
 function PasswordSecurity() {
   return (
-    <div className="text-white 2xl:my-[3vw] px-[2.5vw] h-screen">
+    <div className="2xl:my-[2vw] px-[2.5vw] h-screen">
       <PersonalTagTemp data={DetailsData.passwordSecurity} />
     </div>
   );

@@ -7,7 +7,7 @@ function PrivateTagTemp({data}) {
       navigate("/settings");
     };
   return (
-        <div key={data.id} className="mt-[1vw] space-y-2 mb-[3vw] ">
+        <div key={data.id} className="space-y-2 mb-[3vw] ">
           <div className="flex justify-between items-center">
             <h1 className="text-lg lg:text-2xl font-bold">{data.heading}</h1>
             <AiOutlineClose className="text-lg lg:text-2xl" onClick={handleCloseClick} />
@@ -23,7 +23,7 @@ function PrivateTagTemp({data}) {
                   <p className="text-xs lg:text-base">{detail.info}</p>
 
                   {detail.subDetails && (
-                    <section className="mt-2 bg-[#DFE7FD] text-black rounded-lg">
+                    <section className="mt-2 bg-gray-100 shadow-sm text-black rounded-lg">
                       {detail.subDetails.map((subDetail, subDetailIndex) => (
                         <div
                           key={subDetailIndex}

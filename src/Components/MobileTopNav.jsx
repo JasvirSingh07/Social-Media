@@ -36,16 +36,16 @@ function MobileTopNav() {
   }
 
   return (
-    <div className="flex items-center justify-between shadow-md p-4 bg-black">
+    <div className="flex items-center justify-between">
       <div className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#554295] via-[#EE2D31] to-[#F79421]">
         PixGram
       </div>
       <div className="flex space-x-4">
         <Link to="/notifications">
-          <FaHeart className="text-white w-6 h-6" />
+          <FaHeart className="w-6 h-6" />
         </Link>
         <Link to="/messages">
-          <FaFacebookMessenger className="text-white w-6 h-6" />
+          <FaFacebookMessenger className="w-6 h-6" />
         </Link>
       </div>
     </div>

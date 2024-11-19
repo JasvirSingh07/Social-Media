@@ -27,14 +27,14 @@ const Create = () => {
     );
 
   return (
-    <div className="py-[2vw]  w-full sm:w-8/12 mx-auto px-[2.5vw] pb-20 h-screen">
+    <div className="py-[2vw] w-full sm:w-8/12 mx-auto px-[2.5vw] pb-20 h-screen">
       <div className="flex space-x-[1vw] items-center ">
-        <IoCreateOutline className="text-[5vw] sm:text-[2.5vw] text-white " />
-        <p className="text-xl sm:text-lg lg:text-2xl xl:text-4xl tracking-wide text-white font-extrabold">
+        <IoCreateOutline className="text-[5vw] sm:text-[2.5vw] " />
+        <p className="text-xl sm:text-lg lg:text-2xl xl:text-4xl tracking-wide font-extrabold">
           Create Post
         </p>
       </div>
-      <div className="mt-4 text-white *:rounded-lg shadow-md border ">
+      <div className="mt-4 rounded-lg shadow-md border ">
         {/* <div className="flex space-x-2 my-2 ml-10 sm:ml-20 items-center">
           <img
             src={img}
@@ -55,7 +55,7 @@ const Create = () => {
           ) : (
             <label
               htmlFor="file-upload"
-              className="flex flex-col items-center justify-center w-full h-64 2xl:h-[370px] border  rounded-md cursor-pointer "
+              className="flex flex-col items-center justify-center w-full h-64 2xl:h-[370px] border rounded-md cursor-pointer "
             >
               {imageSrc}
               <input
@@ -73,7 +73,7 @@ const Create = () => {
             <textarea
               id="caption"
               rows="2"
-              className="w-full px-3 py-2 border  bg-[#DFE7FD] rounded-md  placeholder:text-sm lg:placeholder:text-lg"
+              className="w-full px-3 py-2 border  rounded-md  placeholder:text-sm lg:placeholder:text-lg"
               placeholder="Add Caption"
             ></textarea>
           </div>
@@ -92,7 +92,7 @@ const Create = () => {
         <div className="flex w-11/12 justify-end mt-7 sm:mt-2 mb-3">
           <button
             type="submit"
-            className="w-14 lg:w-24 xl:w-32 xl:text-2xl bg-[#DFE7FD] text-black lg:py-1 rounded-md"
+            className="w-14 lg:w-24 xl:w-32 xl:text-2xl bg-blue-700 hover:bg-blue-500 text-white lg:py-1 rounded-md"
           >
             Post
           </button>

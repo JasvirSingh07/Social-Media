@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "/logo/pixgram.png"
+// import logo from "/logo/pixgram.jpg"
 import {
   FaHome,
   FaSearch,
@@ -75,7 +75,7 @@ const Sidebar = () => {
       <div className={`lg:flex flex-col lg:space-y-3 sm:overflow-y-auto scrollbar-hide`}>
         {/* Profile Section */}
         <div className="flex items-center xl:p-2 mt-4 mb-6 lg:mt-6 ">
-          <img src={logo} alt="log"className="w-[5vw] h-[5vw] xl:w-16 xl:h-16 object-cover" />
+          {/* <img src={logo} alt="log"className="w-[5vw] h-[5vw] xl:w-16 xl:h-16 object-cover" /> */}
           <h1 className="text-[3vw] xl:text-4xl tracking-wide font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#554295] via-[#EE2D31] to-[#F79421]">
             PixGram
           </h1>
@@ -95,7 +95,7 @@ const Sidebar = () => {
                   <span className="lg:text-xl">{item.label}</span>
                 </Link>
                 {item.label === "More" && isDropdownOpen && (
-                  <div className="bg-[#DFE7FD] text-black rounded-md mt-2 w-full p-2">
+                  <div className="bg-gray-100 text-black rounded-md mt-2 w-full p-2">
                     {dropdownItems.map((dropdownItem, index) => (
                       <div key={index}>
                         <Link

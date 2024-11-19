@@ -16,7 +16,7 @@ function PersonalDetailsTemp({data}) {
           </div>
           <p className="text-xs lg:text-base">{data.description}</p>
 
-          <section className="bg-[#DFE7FD] text-black rounded-lg">
+          <section className="bg-gray-100 shadow-sm text-black rounded-lg">
             {data.details.map((detail, detailIndex) => (
               <div
                 key={detailIndex}

@@ -7,31 +7,31 @@ import { FaPlusSquare, FaVideo } from "react-icons/fa";
 const navItems = [
   {
     id: 1,
-    icon: <AiOutlineHome className="text-2xl text-white" />,
+    icon: <AiOutlineHome className="text-2xl" />,
     label: "Home",
     path: "/",
   },
   {
     id: 2,
-    icon: <FiSearch className="text-2xl text-white" />,
+    icon: <FiSearch className="text-2xl" />,
     label: "Search",
     path: "/explore",
   },
   {
     id: 3,
-    icon: <FaPlusSquare className="text-2xl text-white" />, 
+    icon: <FaPlusSquare className="text-2xl" />, 
     label: "Create",
     path: "/create",
   },
   {
     id: 4,
-    icon: <FaVideo className="text-2xl text-white" />,
+    icon: <FaVideo className="text-2xl" />,
     label: "Reels",
     path: "/reels",
   },
   {
     id: 5,
-    icon: <CgProfile className="text-2xl text-white" />,
+    icon: <CgProfile className="text-2xl " />,
     label: "Profile",
     path: "/profile",
   },
@@ -39,8 +39,8 @@ const navItems = [
 
 const MobNav = () => {
   return (
-    <nav className="fixed bottom-0 w-full bg-[#0B0014] border-t border-gray-300 border-opacity-20">
-      <div className="flex justify-around py-2">
+    <nav className="fixed bottom-0 bg-gray-50 w-full block z-50  border-t border-t-black p-1">
+      <div className="flex justify-around ">
         {navItems.map((item) => (
           <Link
             to={item.path}

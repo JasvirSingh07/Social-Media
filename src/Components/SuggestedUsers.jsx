@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import img from "/images/jass.png";
+import img from "/images/img.jpg";
 import { UsersData } from "../Utility/UsersData";
 
 const SuggestedUsers = () => {
@@ -44,10 +44,10 @@ const SuggestedUsers = () => {
           <img
             src={img}
             alt="profile"
-            className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2"
+            className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover "
           />
         </div>
-        <div className="text-white  text-sm md:text-lg">jass_bhatoa_</div>
+        <div className="text-sm md:text-lg">jass_bhatoa_</div>
         <div className="text-blue-500 ml-auto text-xs md:text-base cursor-pointer">
           Switch
         </div>
@@ -71,7 +71,7 @@ const SuggestedUsers = () => {
                 alt="user profile"
                 className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2"
               />
-              <div className="text-white text-sm sm:text-base">
+              <div className="text-sm sm:text-base">
                 {user.username}
               </div>
             </div>

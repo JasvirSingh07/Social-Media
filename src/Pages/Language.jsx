@@ -10,7 +10,7 @@ function Language() {
   };
 
   return (
-    <div className="text-white px-[2.5vw] 2xl:my-[3vw]  space-y-5 ">
+    <div className="px-[2.5vw] 2xl:my-[2vw] space-y-5">
       <div className="flex items-center gap-[2vw] ">
         <MdArrowBackIosNew
           className="text-2xl  cursor-pointer"
@@ -21,7 +21,7 @@ function Language() {
       <input
         type="text"
         placeholder="Search..."
-        className="p-[0.8vw] rounded-lg w-8/12 sm:w-6/12  bg-[#DFE7FD] text-black focus:outline-none"
+        className="p-[0.8vw] rounded-lg w-8/12 sm:w-6/12  bg-black text-white focus:outline-none"
       />
       <div className="flex flex-col space-y-[1vw]"> 
         {LanguageData.map((lang, index) => {

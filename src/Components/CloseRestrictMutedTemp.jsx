@@ -12,7 +12,7 @@ function CloseRestrictMutedTemp() {
             alt="img"
             className="w-8 h-8 lg:w-10 lg:h-10 rounded-full object-cover border-2 "
           />
-          <h1 className="text-white">{user.username}</h1>
+          <h1 className="">{user.username}</h1>
         </div>
         <RiCheckboxCircleFill className="text-2xl lg:text-3xl" />
       </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import downArrow from "/images/downArrow.svg";
+import downArrow from "/images/Vector 66.svg";
 import { FaqData } from "../Utility/FaqData";
 import call from "/videos/Call Center.gif";
 
@@ -10,8 +10,8 @@ function Help() {
   };
 
   return (
-    <div className="space-y-[2vw] px-[2.5vw]  py-[2vw] text-white ">
-      <div className=" bg-[#DFE7FD] rounded-xl text-black flex flex-col sm:flex-row items-center pb-5 sm:pb-0 md:space-x-[3vw] sm:space-x-5 w-[95%] mx-auto sm:rounded-3xl sm:px-[3vw]">
+    <div className="space-y-[2vw] px-[2.5vw]  py-[2vw] text-black ">
+      <div className="rounded-xl flex flex-col sm:flex-row items-center pb-5 sm:pb-0 md:space-x-[3vw] sm:space-x-5 w-[95%] mx-auto sm:rounded-3xl sm:px-[3vw]">
         <div className="sm:ml-10 lg:ml-[2vw] mt-4 sm:mt-8 mx-auto sm:mx-0 w-[80%] sm:w-[40%] lg:w-[35%] xl:w-[25%] ">
           <img
             src={call}
@@ -57,8 +57,8 @@ function Help() {
         <h1 className="text-xl sm:text-3xl mx-auto tracking-wide font-bold mt-2">
           Featured Topics
         </h1>
-        <div className="mt-4 md:mt-4 border rounded-2xl w-[90%]  mx-auto py-5">
-          <div className="max-h-[500px] overflow-y-auto">
+        <div className="mt-4 md:mt-4  rounded-2xl w-[90%]  mx-auto py-5">
+          <div className="max-h-[500px] overflow-y-auto scrollbar-hide">
             {FaqData.map((item, index) => (
               <div
                 key={index}
@@ -80,7 +80,7 @@ function Help() {
                   />
                 </div>
                 {expandedIndex === index && (
-                  <div className="mt-2 px-5 sm:px-10 py-2 shadow-lg text-xs sm:text-sm md:text-lg 2xl:text-xl bg-gray-400 rounded-lg">
+                  <div className="mt-2 px-5 sm:px-10 py-2 shadow-lg text-xs sm:text-sm md:text-lg 2xl:text-xl bg-gray-200 rounded-lg">
                     {item.answer}
                   </div>
                 )}
