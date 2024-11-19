@@ -29,10 +29,10 @@ const StoryList = () => {
     <div className="flex space-x-4 overflow-x-scroll scrollbar-hide ">
       {/* Add Your Story */}
       <div className="flex-shrink-0 text-center">
-        <div className="relative  w-16 h-16 lg:w-20 lg:h-20 rounded-full border  flex items-center justify-center">
+        <div className="relative  w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center">
         <img
             src={img}
-            className="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover border-2 opacity-90 "
+            className="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover opacity-90 "
           />
           <FaPlus className="text-white text-2xl absolute" />
         </div>
@@ -44,7 +44,7 @@ const StoryList = () => {
           <img
             src={story.img}
             alt={story.alt}
-            className="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover border-2 "
+            className="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover"
           />
           <p className="text-sm  mt-2">{story.alt}</p>
         </div>

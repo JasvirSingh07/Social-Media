@@ -69,7 +69,7 @@ const SuggestedUsers = () => {
               <img
                 src={user.dp}
                 alt="user profile"
-                className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2"
+                className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover"
               />
               <div className="text-sm sm:text-base">
                 {user.username}
