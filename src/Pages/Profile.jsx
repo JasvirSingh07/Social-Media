@@ -35,15 +35,14 @@ const Profile = () => {
       {/* Profile Picture */}
       <div className="flex justify-center ">
         <img
-          className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-2 border-white lg:w-32 lg:h-32"
+          className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-white lg:w-28 lg:h-28"
           src={img}
           alt="Profile"
         />
       </div>
-
       {/* Profile Info Section */}
       <div className="text-center mb-2 sm:mb-4">
-        <h1 className="text-xl font-extrabold text-white mb-2 sm:text-2xl  lg:text-3xl">
+        <h1 className="text-xl font-extrabold  mb-2 sm:text-2xl  lg:text-3xl">
           _jass_bhatoa_
         </h1>
         <div className="flex justify-center items-center gap-4 mt-2">
