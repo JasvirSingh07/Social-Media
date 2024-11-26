@@ -1,19 +1,17 @@
-import { AiOutlineHome } from "react-icons/ai";
-import { FiSearch } from "react-icons/fi";
-import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import { FaPlusSquare, FaVideo } from "react-icons/fa"; 
+import { FaHome, FaPlusSquare, FaSearch, FaUserCircle, FaVideo } from "react-icons/fa"; 
+import {  } from "react-icons/bi";
 
 const navItems = [
   {
     id: 1,
-    icon: <AiOutlineHome className="text-2xl" />,
+    icon: <FaHome className="text-2xl" />,
     label: "Home",
     path: "/",
   },
   {
     id: 2,
-    icon: <FiSearch className="text-2xl" />,
+    icon: <FaSearch className="text-2xl" />,
     label: "Search",
     path: "/explore",
   },
@@ -31,7 +29,7 @@ const navItems = [
   },
   {
     id: 5,
-    icon: <CgProfile className="text-2xl " />,
+    icon: <FaUserCircle className="text-2xl " />,
     label: "Profile",
     path: "/profile",
   },

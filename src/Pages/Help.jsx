@@ -2,15 +2,26 @@ import { useState } from "react";
 import downArrow from "/images/Vector 66.svg";
 import { FaqData } from "../Utility/FaqData";
 import call from "/videos/Call Center.gif";
+import { useNavigate } from "react-router-dom";
+import { BiArrowBack } from "react-icons/bi";
 
 function Help() {
   const [expandedIndex, setExpandedIndex] = useState(null);
   const handleArrowClick = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
+  const navigate = useNavigate();
+  const handleBackArrowClick = () => {
+    navigate("/settings");
+  };
 
   return (
     <div className="space-y-[2vw] px-[2.5vw]  py-[2vw] text-black ">
+      <BiArrowBack
+        className="lg:text-2xl text-xl  cursor-pointer"
+        onClick={handleBackArrowClick}
+      />
+
       <div className="rounded-xl flex flex-col sm:flex-row items-center pb-5 sm:pb-0 md:space-x-[3vw] sm:space-x-5 w-[95%] mx-auto sm:rounded-3xl sm:px-[3vw]">
         <div className="sm:ml-10 lg:ml-[2vw] mt-4 sm:mt-8 mx-auto sm:mx-0 w-[80%] sm:w-[40%] lg:w-[35%] xl:w-[25%] ">
           <img

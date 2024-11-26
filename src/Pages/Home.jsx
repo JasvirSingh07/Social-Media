@@ -27,7 +27,7 @@ import Language from "./Language";
 const Home = () => {
   const location = useLocation();
   return (
-    <div className="flex w-full">
+    <div className="flex w-full ">
       {/* Sidebar for large screens */}
       <div className="hidden sm:flex w-[20%] h-screen text-black fixed border-r border-r-black top-0 left-0">
         <Sidebar />
