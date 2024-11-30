@@ -10,7 +10,7 @@ function Language() {
   };
 
   return (
-    <div className="px-[2.5vw] 2xl:my-[2vw] space-y-5">
+    <div className="px-[2.5vw] py-[2vw] space-y-5">
       <div className="flex items-center gap-[2vw] ">
         <MdArrowBackIosNew
           className="text-2xl  cursor-pointer"

@@ -8,7 +8,7 @@ function PrivacyCommentTemp({ data }) {
     navigate("/settings");
   };
   return (
-    <div className="px-[2.5vw] 2xl:my-[2vw] space-y-2 h-screen">
+    <div className="px-[2.5vw] py-[2vw] space-y-2 h-screen">
       <div className="flex items-center gap-[2vw]">
         <MdArrowBackIosNew
           className="text-xl lg:text-2xl"

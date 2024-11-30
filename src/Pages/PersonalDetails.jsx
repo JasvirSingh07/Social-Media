@@ -3,7 +3,7 @@ import { DetailsData } from "../Utility/DetailsData";
 
 function PersonalDetails() {
   return (
-    <div className="2xl:my-[2vw] h-screen px-[2.5vw]">
+    <div className="py-[2vw] h-screen px-[2.5vw]">
       <PersonalDetailsTemp data={DetailsData.personalDetails} />
     </div>
   );

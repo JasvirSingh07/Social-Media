@@ -69,9 +69,9 @@ const ReelItem = ({ reel }) => {
               alt="Profile"
               className="w-10 h-10 object-cover rounded-full"
             />
-            <div className="ml-2">
+            <div className="ml-2 flex items-center gap-2">
               <div className="font-bold">{reel.username}</div>
-              <div className="text-sm">Follow</div>
+              <div className="text-sm text-blue-500">Follow </div>
             </div>
           </div>
           <div className="mb-2">{reel.caption}</div>

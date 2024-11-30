@@ -4,7 +4,7 @@ import { DetailsData } from "../Utility/DetailsData"
 
 function TagMentions() {
   return (
-    <div className="px-[2.5vw] 2xl:my-[2vw] h-screen">
+    <div className="px-[2.5vw] py-[2vw] h-screen">
       <PrivateTagTemp data={DetailsData.tagsMentions}/>
     </div>
   )

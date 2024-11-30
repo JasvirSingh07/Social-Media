@@ -29,7 +29,7 @@ const Explore = () => {
   ];
 
   return (
-    <div className="p-2 sm:w-8/12 ">
+    <div className="p-2 sm:w-8/12 mx-auto">
       {/* Search Bar */}
       {/* <div className="w-full mb-3 py-[2.5vw]">
         <input

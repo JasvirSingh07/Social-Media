@@ -8,7 +8,7 @@ function CloseFriends() {
     navigate("/settings");
   };
   return (
-    <div className="px-[2.5vw] 2xl:my-[3vw] h-screen space-y-2 ">
+    <div className="px-[2.5vw] py-[3vw] h-screen space-y-2 ">
       <div className="flex items-center  gap-[2vw] ">
         <MdArrowBackIosNew
           className="text-xl lg:text-2xl cursor-pointer"

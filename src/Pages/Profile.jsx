@@ -2,9 +2,13 @@ import { FaBookmark, FaCamera, FaCog, FaTag, FaTh } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import img from "/images/img.jpg";
+import img1 from "/images/img4.webp";
+import img2 from "/images/virat.webp";
+import img3 from "/images/img10.jpg";
 
 const Profile = () => {
-  const [activeTab,setActiveTab] = useState();
+  const [activeTab, setActiveTab] = useState("Posts");
+
   const navigate = useNavigate();
   const handleIconClick = () => {
     navigate("/settings");
@@ -12,23 +16,25 @@ const Profile = () => {
   const handleEditProfileClick = () => {
     navigate("/editProfile");
   };
+
   const tabs = [
     {
       tab: "Posts",
       icon: <FaTh className="mr-2" />,
-      activeTab: "",
     },
     {
       tab: "Saved",
       icon: <FaBookmark className="mr-2" />,
-      activeTab: "",
     },
     {
       tab: "Tagged",
       icon: <FaTag className="mr-2" />,
-      activeTab: "",
     },
   ];
+
+  const posts = [{ img: img }, { img: img1 }, { img: img2 }, { img: img3 }];
+  const saved = [{ img: img1 }, { img: img2 }];
+  const tagged = [{ img: img3 }, { img: img }, { img: img1 }];
 
   return (
     <div className="h-screen p-2 ">
@@ -82,33 +88,61 @@ const Profile = () => {
       <div className="text-center mb-6">
         <p className="sm:text-lg md:text-xl">جس بھٹوہ</p>
         <p className="sm:text-lg md:text-xl">
-          । ਬੇਬੇ ਬਾਪੂ 💯 ।<br /> #wmk🙏
-          <br />۔ ਪੰਜਾਬ ⛳ ।
+          ਬੇਬੇ ਬਾਪੂ 💯 <br /> #wmk🙏
+          <br />۔ پنجاب ⛳ 
         </p>
       </div>
 
       {/* Tabs Section */}
       <div className="flex justify-center gap-8 border-t border-gray-700  mb-6 relative">
-        {tabs.map((item,index) => {
-         return <div onClick={()=>setActiveTab(item.tab)} key={index} className={`${activeTab===item.tab ? "border-t":"opacity-60"} cursor-pointer flex items-center sm:text-lg `}>
-           {item.icon}
+        {tabs.map((item, index) => (
+          <div
+            onClick={() => setActiveTab(item.tab)}
+            key={index}
+            className={`${
+              activeTab === item.tab ? "border-t-2 border-gray-500" : "opacity-60"
+            } cursor-pointer flex items-center sm:text-lg `}
+          >
+            {item.icon}
             <span className="font-bold">{item.tab}</span>
-          </div>;
-        })}
+          </div>
+        ))}
       </div>
 
-      {/* Share Photos Section */}
+      {/* Content Section - Conditional Rendering Based on Active Tab */}
       <div className="flex flex-col items-center justify-center mb-6">
-        <FaCamera className="text-3xl mb-2 sm:text-5xl " />
-        <h2 className="text-xl font-bold sm:text-2xl text-blue-500">
-          Share Photos
-        </h2>
-        {/* <p className="mt-2 sm:text-lg md:text-xl">
-          When you share photos, they will appear on your profile.
-        </p> */}
-        {/* <a href="#" className="text-blue-500 font-bold mt-2 inline-block sm:text-lg ">
-          Share your first photo
-        </a> */}
+        <div className="flex-wrap flex gap-[1vw] lg:w-1/2">
+          {activeTab === "Posts" &&
+            posts.map((post, index) => (
+              <div key={index} className="w-24 h-24 lg:h-48 lg:w-48">
+                <img
+                  src={post.img}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          {activeTab === "Saved" &&
+            saved.map((post, index) => (
+              <div key={index} className="w-24 h-24 lg:h-48 lg:w-48">
+                <img
+                  src={post.img}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          {activeTab === "Tagged" &&
+            tagged.map((post, index) => (
+              <div key={index} className="w-24 h-24 lg:h-48 lg:w-48">
+                <img
+                  src={post.img}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   );
