@@ -16,7 +16,7 @@ function Language() {
           className="text-2xl  cursor-pointer"
           onClick={handleBackArrowClick}
         />
-        <h2 className="text-xl 2xl:text-2xl font-bold ">Search languages</h2>
+        <h2 className="text-xl 2xl:text-2xl font-bold ">Search Languages</h2>
       </div>
       <input
         type="text"
