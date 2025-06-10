@@ -1,5 +1,5 @@
 import PrivacyCommentTemp from "../Components/PrivacyCommentTemp"
-import { PrivacyCommentData } from "../Utility/PrivacyCommentData"
+import { PrivacyCommentData } from "../data/PrivacyCommentData"
 
 function Comments() {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";  
-import { settingsData } from "../Utility/settingsData"; 
+import { settingsData } from "../data/settingsData"; 
 
 const Settings = () => {
   return (

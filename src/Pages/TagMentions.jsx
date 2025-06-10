@@ -1,6 +1,5 @@
-
 import PrivateTagTemp from "../Components/PrivateTagTemp"
-import { DetailsData } from "../Utility/DetailsData"
+import { DetailsData } from "../Components/DetailsData"
 
 function TagMentions() {
   return (

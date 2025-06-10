@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import img from "/images/img.jpg";
-import { UsersData } from "../Utility/UsersData";
+import { UsersData } from "../data/UsersData";
 
 const SuggestedUsers = () => {
   const location = useLocation();

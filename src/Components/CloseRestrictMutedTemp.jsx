@@ -1,5 +1,5 @@
 import { RiCheckboxCircleFill } from "react-icons/ri"
-import { UsersData } from "../Utility/UsersData"
+import { UsersData } from "../data/UsersData"
 
 function CloseRestrictMutedTemp() {
   return (

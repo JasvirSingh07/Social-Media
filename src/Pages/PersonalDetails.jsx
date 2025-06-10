@@ -1,5 +1,5 @@
 import PersonalDetailsTemp from "../Components/PersonalDetailsTemp";
-import { DetailsData } from "../Utility/DetailsData";
+import { DetailsData } from "../Components/DetailsData";
 
 function PersonalDetails() {
   return (

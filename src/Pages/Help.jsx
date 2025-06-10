@@ -1,6 +1,6 @@
 import { useState } from "react";
 import downArrow from "/images/Vector 66.svg";
-import { FaqData } from "../Utility/FaqData";
+import { FaqData } from "../data/FaqData";
 import call from "/videos/Call Center.gif";
 import { useNavigate } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";

@@ -1,6 +1,6 @@
 import { MdArrowBackIosNew } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { LanguageData } from "../Utility/LanguageData";
+import { LanguageData } from "../data/LanguageData";
 
 function Language() {
   const navigate = useNavigate();

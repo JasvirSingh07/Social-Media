@@ -1,6 +1,6 @@
 import { MdArrowBackIosNew } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { notificationsData } from "../Utility/NotificationsData";
+import { notificationsData } from "../data/NotificationsData";
 import { NotificationItem } from "../Components/NotificationItem";
 
 export const Notifications = () => {
